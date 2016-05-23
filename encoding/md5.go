@@ -10,3 +10,7 @@ func GetMD5Hash(s string) string {
 	h.Write([]byte(s))
 	return hex.EncodeToString(h.Sum(nil))
 }
+
+func ValidMD5Hash(s string) bool {
+	return len(s) == 32
+}
