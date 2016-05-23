@@ -5,6 +5,8 @@ import (
 	"encoding/hex"
 )
 
+const EmptyMD5Hash string = "00000000000000000000000000000000"
+
 func GetMD5Hash(s string) string {
 	h := md5.New()
 	h.Write([]byte(s))
